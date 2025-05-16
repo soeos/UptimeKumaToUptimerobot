@@ -175,9 +175,39 @@ UptimeRobot 已有监控 9 条
 [成功] img-bed-Telegraph
 [成功] chatapi
 [失败] Uptime Kuma - 原因: {'stat': 'fail', 'error': {'type': 'already_exists', 'message': 'monitor already exists.'}}
+
+
+
 [成功] sink
 [成功] TV
 [成功] Github
 
 完成：成功 5 条，失败 1 条，跳过 10 条
 ```
+---
+
+## 🖥 使用说明（CLI + 定时任务）
+
+✅ 一次性运行（命令行）
+
+1. 修改脚本中的路径和 API Key：
+
+   ```python
+   KUMA_JSON_FILE = r"C:\Users\Uptime_Kuma_Backup.json"
+   UPTIMEROBOT_API_KEY = "你的 API Key"
+   ```
+   或者将 API Key 设置为系统环境变量：
+    ```python
+    set UPTIMEROBOT_API_KEY=你的 API Key
+    ```
+2. 在终端中运行：
+```bash
+python trans.py
+```
+或指定 Python 版本：
+```bash
+C:\Python310\python.exe trans.py
+```
+
+
+后面我会打包成exe文件，便于大家使用，欢迎fork和star!
